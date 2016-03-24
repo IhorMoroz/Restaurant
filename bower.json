@@ -1,0 +1,22 @@
+{
+  "name": "restaurant",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "IhorMoroz <work.ihor.m@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/IhorMoroz/Restaurant",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+],
+"devDependencies": {
+  "reset-css" : "latest",
+  "bootstrap" : "latest"
+}
+}

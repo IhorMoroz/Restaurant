@@ -1,0 +1,377 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Play&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+header .blockLeft h1,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*### FONTS ###*/
+
+/*### SIZE ###*/
+
+/*### STRUCTURE STYLE ###*/
+
+.absBlock {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  height: auto;
+}
+
+.siteBlock {
+  margin: 0 auto;
+  padding: 0px 10px;
+  width: 1200px;
+}
+
+/*### SITE STYLE ###*/
+
+header .blockLeft {
+  float: left;
+  width: 250px;
+}
+
+header .blockLeft a {
+  text-decoration: none;
+}
+
+header .blockLeft h3,
+header .blockLeft h1 {
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
+  line-height: 27px;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header .blockLeft h1 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+header .blockRight {
+  float: right;
+  width: 75%;
+  overflow: hidden;
+}
+
+.backTopLine {
+  background: #fff;
+}
+
+.backTopLine .topLine {
+  height: 30px;
+  font-size: 0;
+}
+
+.backTopLine .topLine div[class$='Box'] {
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  overflow: hidden;
+  height: 30px;
+}
+
+.backTopLine .topLine .infoBox {
+  width: 290px;
+}
+
+.backTopLine .topLine .infoBox p {
+  position: relative;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  line-height: 29px;
+  padding: 0px 20px 0px 20px;
+  color: #000;
+  margin: 0;
+}
+
+.backTopLine .topLine .infoBox p.time:before,
+.backTopLine .topLine .infoBox p.phone:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0px;
+  width: 17px;
+  height: 18px;
+  background: url("../img/app/spritesheet.png") no-repeat;
+  background-position: -5px -5px;
+}
+
+.backTopLine .topLine .infoBox p.phone:before {
+  background-position: -105px -5px;
+}
+
+.backTopLine .topLine .languageBox {
+  width: 230px;
+  text-align: center;
+}
+
+.backTopLine .topLine .languageBox a {
+  display: inline-block;
+  line-height: 23px;
+  padding: 3px;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.backTopLine .topLine .userBox {
+  width: 360px;
+}
+
+.backTopLine .topLine .userBox span {
+  font-size: 14px;
+  line-height: 25px;
+  color: green;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 0px 5px;
+}
+
+.backTopLine .topLine .userBox a {
+  text-decoration: none;
+  font-size: 16px;
+  float: right;
+  line-height: 28px;
+}
+
+.backTopLine .topLine .userBox a.user {
+  text-transform: capitalize;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: bold;
+  color: #000;
+  padding: 0px 8px;
+}
+
+.backTopLine .topLine .userBox a.user:hover {
+  color: #E7A331;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.backTopLine .topLine .userBox form {
+  float: right;
+}
+
+.backTopLine .topLine .userBox form button {
+  background: none;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 28px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.backMainMenu {
+  background: url("../img/app/decoration/back_menu.png");
+}
+
+.backMainMenu .mainMenu {
+  height: 50px;
+  overflow: hidden;
+}
+
+.backMainMenu .mainMenu nav a {
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.backMainMenu .mainMenu nav .left {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.backMainMenu .mainMenu nav .left li {
+  display: inline-block;
+  padding: 12px 3px 8px;
+}
+
+.backMainMenu .mainMenu nav .left li a {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.backMainMenu .mainMenu nav .left li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: #E7A331;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.backMainMenu .mainMenu nav .left li a:hover:after {
+  content: "";
+  left: 0;
+}
+
+.backMainMenu .mainMenu nav .right {
+  float: right;
+}
+
+.backMainMenu .mainMenu nav .right a {
+  display: inline-block;
+  margin-top: 7px;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.backMainMenu .mainMenu nav .right a:hover {
+  color: #E7A331;
+}
