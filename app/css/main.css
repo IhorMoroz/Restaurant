@@ -17,7 +17,7 @@ iframe,
 h1,
 h2,
 h3,
-header .blockLeft h1,
+header .blockLeft h2,
 h4,
 h5,
 h6,
@@ -159,7 +159,30 @@ table {
   width: 1200px;
 }
 
-/*### SITE STYLE ###*/
+.blockTitle {
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 34px;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 20px 0px;
+}
+
+.readMore {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Fira Sans", sans-serif;
+  color: #E7A331;
+}
+
+.readMore:hover {
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+/*### INDEX PAGE ###*/
 
 header .blockLeft {
   float: left;
@@ -171,7 +194,7 @@ header .blockLeft a {
 }
 
 header .blockLeft h3,
-header .blockLeft h1 {
+header .blockLeft h2 {
   font-size: 20px;
   font-family: 'Dancing Script', cursive;
   line-height: 27px;
@@ -181,7 +204,7 @@ header .blockLeft h1 {
   padding: 0;
 }
 
-header .blockLeft h1 {
+header .blockLeft h2 {
   color: #fff;
   font-size: 30px;
   line-height: 45px;
@@ -374,4 +397,241 @@ header .blockRight {
 
 .backMainMenu .mainMenu nav .right a:hover {
   color: #E7A331;
+}
+
+footer {
+  height: 500px;
+  border-bottom: 3px solid #E7A331;
+}
+
+footer .backContentBox {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 300px;
+  background: url("../img/app/decoration/back_menu.png");
+}
+
+footer .backContentBox .contentBox {
+  height: 300px;
+  color: #fff;
+}
+
+footer .backContentBox .contentBox .footer {
+  width: 100%;
+  height: 270px;
+}
+
+footer .backContentBox .contentBox .footer div {
+  padding-top: 20px;
+  display: inline-block;
+  vertical-align: top;
+  width: 290px;
+  height: 270px;
+  overflow: hidden;
+}
+
+footer .backContentBox .contentBox .footer .title {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Play", sans-serif;
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+
+footer .backContentBox .contentBox .footer .subscribe input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  display: block;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+footer .backContentBox .contentBox .footer .subscribe input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+footer .backContentBox .contentBox .footer .subscribe input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+footer .backContentBox .contentBox .footer .subscribe input:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+footer .backContentBox .contentBox .footer .subscribe button {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: none;
+  font-family: "Play", sans-serif;
+  font-size: 14px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+footer .backContentBox .contentBox .footer .contacts,
+footer .backContentBox .contentBox .footer .worksTime,
+footer .backContentBox .contentBox .footer .developers {
+  text-align: center;
+}
+
+footer .backContentBox .contentBox .boxCopy {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+}
+
+footer .backContentBox .contentBox .boxCopy p {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  line-height: 26px;
+}
+
+footer .map {
+  width: 100%;
+  height: 500px;
+}
+
+/*### MAIN PAGE ###*/
+
+#carousel-example-generic {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  height: 500px;
+  overflow: hidden;
+}
+
+#carousel-example-generic .item {
+  height: 500px;
+  overflow: hidden;
+}
+
+#carousel-example-generic .item img {
+  width: 100%;
+  min-height: 500px;
+}
+
+#carousel-example-generic .item .carousel-caption {
+  top: 50px;
+}
+
+#carousel-example-generic .item .carousel-caption h2 {
+  text-transform: capitalize;
+}
+
+.backAboutUs {
+  height: auto;
+  background: url("../img/app/decoration/back_white.png");
+}
+
+.backAboutUs .aboutUs {
+  height: auto;
+  padding: 60px 50px;
+}
+
+.backAboutUs .aboutUs .boxImg,
+.backAboutUs .aboutUs .boxImg:after,
+.backAboutUs .aboutUs .boxText {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  height: 250px;
+  border: 5px solid #fff;
+  box-shadow: 0px 0px 10px #000;
+}
+
+.backAboutUs .aboutUs .boxImg:after,
+.backAboutUs .aboutUs .boxText:after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  -webkit-transform: rotate(-8deg);
+      -ms-transform: rotate(-8deg);
+          transform: rotate(-8deg);
+  background: url("../img/app/slider/back4.jpg");
+  background-size: cover;
+}
+
+.backAboutUs .aboutUs .boxImg img,
+.backAboutUs .aboutUs .boxImg:after img,
+.backAboutUs .aboutUs .boxText img {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+
+.backAboutUs .aboutUs .boxText {
+  border: none;
+  box-shadow: none;
+  width: 650px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.backMainDishes {
+  height: auto;
+  background: url("../img/app/decoration/back4.png");
+}
+
+.backMainDishes .mainDishes {
+  height: auto;
+  padding: 0px 95px 50px 95px;
+  font-size: 0;
+}
+
+.backMainDishes .mainDishes .blockTitle {
+  color: #fff;
+}
+
+.backMainDishes .mainDishes .dish {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.backMainDishes .mainDishes .dish img {
+  width: 100%;
+  height: 100%;
+}
+
+.backMainDishes .mainDishes .dish .desc {
+  position: absolute;
+  top: -100%;
+  left: 10%;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  background: url("../img/app/decoration/back_menu.png");
+  border-radius: 5px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.backMainDishes .mainDishes .dish .desc p:nth-child(1) {
+  margin-top: 50px;
+}
+
+.backMainDishes .mainDishes .dish .desc p {
+  text-transform: capitalize;
+}
+
+.backMainDishes .mainDishes .dish .desc p span {
+  font-weight: bold;
+}
+
+.backMainDishes .mainDishes .dish:hover .desc {
+  top: 10%;
 }

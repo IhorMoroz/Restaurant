@@ -2,11 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Good Food</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/jquery.min.js" charset="utf-8"></script>
         <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRo7CUvaVaWx6U8cApoFs7htR7UruSWks&callback=initMap" async defer></script>
+        <script src="js/main.js" charset="utf-8"></script>
     </head>
     <body>
         <header>
@@ -38,7 +40,7 @@
             <div class="backMainMenu absBlock">
                 <div class="mainMenu siteBlock">
                     <div class="blockLeft">
-                        <a href="/"><h1>good food</h1></a>
+                        <a href="/"><h2>good food</h2></a>
                     </div>
                     <div class="blockRight">
                         <nav>
@@ -56,5 +58,42 @@
                 </div>
             </div>
         </header>
+        <section>
+            //= main.html
+        </section>
+        <footer class="absBlock">
+            <div class="backContentBox">
+                <div class="contentBox siteBlock">
+                    <div class="footer">
+                        <div class="subscribe">
+                            <h4 class="title">subscribe</h4>
+                            <form action="" method="POST">
+                                <input type="email" name="subEmail" placeholder="You Email">
+                                <button type="submit" name="subscribe">subscribe</button>
+                                <button type="submit" name="unSubscribe">unsubscribe</button>
+                            </form>
+                        </div>
+                        <div class="contacts">
+                            <h4 class="title">Contacts</h4>
+                            <p>34543536565</p>
+                            <p>67567645345</p>
+                        </div>
+                        <div class="worksTime">
+                            <h4 class="title">works time</h4>
+                            <p>Mn - 09:00 - 20:00</p>
+                            <p>Mn - 09:00 - 20:00</p>
+                            <p>Mn - 09:00 - 20:00</p>
+                            <p>Mn - 09:00 - 20:00</p>
+                        </div>
+                        <div class="developers">
+                            <h4 class="title">Developers</h4>
+                            <p>Ihor Moroz</p>
+                        </div>
+                    </div>
+                    <div class="boxCopy"><p>Good Food 2016 &copy</p></div>
+                </div>
+            </div>
+            <div class="map" id="map"></div>
+        </footer>
     </body>
 </html>
