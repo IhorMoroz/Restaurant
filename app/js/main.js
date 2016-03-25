@@ -13,7 +13,7 @@ var map,
         position: position,
         map: map,
         title: 'Good Food',
-        icon: "../img/app/marker3.png"
+        icon: "../img/app/decoration/goodfood.png"
     };
 
 function initMap(){

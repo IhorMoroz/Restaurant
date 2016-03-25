@@ -446,6 +446,7 @@ footer .backContentBox .contentBox .footer .subscribe input {
   display: block;
   margin: 30px auto;
   padding: 10px;
+  outline: none;
 }
 
 footer .backContentBox .contentBox .footer .subscribe input::-webkit-input-placeholder {
@@ -635,3 +636,70 @@ footer .map {
 .backMainDishes .mainDishes .dish:hover .desc {
   top: 10%;
 }
+
+/*### NEWS PAGE ###*/
+
+.backNewsBox {
+  height: auto;
+  background: url("../img/app/decoration/back_white.png");
+}
+
+.backNewsBox .newsBox {
+  height: auto;
+  padding: 50px;
+}
+
+.backNewsBox .newsBox .news {
+  display: inline-block;
+  width: 250px;
+  height: 400px;
+  background: #fff;
+  box-shadow: 0px 0px 10px #000;
+  margin: 0px 0px 20px 18px;
+}
+
+.backNewsBox .newsBox .news .img {
+  width: 100%auto;
+  height: 150px;
+  overflow: hidden;
+}
+
+.backNewsBox .newsBox .news .img img {
+  width: 100%;
+  height: auto;
+}
+
+.backNewsBox .newsBox .news h4 {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0px 5px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.backNewsBox .newsBox .news .desc {
+  padding: 0px 5px;
+  width: 100%;
+  height: 160px;
+  overflow: hidden;
+}
+
+.backNewsBox .newsBox .news .desc p {
+  font-size: 14px;
+  font-family: "Play", sans-serif;
+}
+
+.backNewsBox .newsBox .news .date {
+  padding: 5px;
+}
+
+.backNewsBox .newsBox .news .date span {
+  float: right;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.backNewsBox .newsBox .pagination {
+  display: block;
+  margin-left: 43%;
+}
+
+/*### ONE NEWS PAGE ###*/
