@@ -563,7 +563,7 @@ footer{
                 .desc{
                     width: 100%;
                     height: auto;
-                    padding: 5px;
+                    padding: 10px;
                     font-family: $Fira;
                 }
                 .actionBar{
@@ -598,6 +598,90 @@ footer{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+/*### USER LIST PAGE ###*/
+.backUserListBox{
+    height: auto;
+    background: url("../img/app/decoration/back4.png");
+    .userListBox{
+        padding: 20px 0px;
+        .userList{
+            background: #fff;
+            padding:0px 0px 20px 0px;
+            tr{
+                th{
+                    text-transform: capitalize;
+                    font-weight: bold;
+                }
+                td{
+                    input{
+                        text-align: center;
+                        width: 40px;
+                    }
+                    a{
+                        color:skyblue;
+                        text-decoration: none;
+                    }
+                    .glyphicon-trash{
+                        &:hover{
+                            color:red;
+                            cursor: pointer;
+                        }
+                    }
+                    .error{
+                        border-color:red;
+                    }
+                }
+                .OrPriceTotal{
+                    font-weight: bold;
+                }
+            }
+            .userInfo{
+                h3{
+                    text-transform: capitalize;
+                    text-align: center;
+                    font-size: 24px;
+                    font-family: $OCondensed;
+                }
+                .tableInfo{
+                    width: 500px;
+                    height: auto;
+                    margin: 0 auto;
+                    tr{
+                        td:nth-child(1){
+                            vertical-align: top;
+                            text-transform: capitalize;
+                            text-align: right;
+                            padding-right:10px;
+                            font-family: $Fira;
+                        }
+                        td:nth-child(2){
+                            input, textarea{
+                                width: 200px;
+                                resize: vertical;
+                            }
+                        }
+                    }
+                }
+            }
+            .Submit{
+                display: block;
+                background: none;
+                border:none;
+                margin: 10px auto;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-family: $OCondensed;
+                text-transform: capitalize;
+                border:1px solid skyblue;
+                color:skyblue;
+                &:hover{
+                    color:$Color1;
                 }
             }
         }

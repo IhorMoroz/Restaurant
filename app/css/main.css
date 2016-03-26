@@ -799,7 +799,7 @@ header .blockLeft .backMenuBox .menuBox .boxListDish .descDish h2 {
 .backMenuBox .menuBox .boxListDish .descDish .desc {
   width: 100%;
   height: auto;
-  padding: 5px;
+  padding: 10px;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -833,5 +833,95 @@ header .blockLeft .backMenuBox .menuBox .boxListDish .descDish h2 {
 
 .backMenuBox .menuBox .boxListDish .listDish table tr td a:hover {
   text-decoration: none;
+  color: #E7A331;
+}
+
+/*### USER LIST PAGE ###*/
+
+.backUserListBox {
+  height: auto;
+  background: url("../img/app/decoration/back4.png");
+}
+
+.backUserListBox .userListBox {
+  padding: 20px 0px;
+}
+
+.backUserListBox .userListBox .userList {
+  background: #fff;
+  padding: 0px 0px 20px 0px;
+}
+
+.backUserListBox .userListBox .userList tr th {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.backUserListBox .userListBox .userList tr td input {
+  text-align: center;
+  width: 40px;
+}
+
+.backUserListBox .userListBox .userList tr td a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+.backUserListBox .userListBox .userList tr td .glyphicon-trash:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.backUserListBox .userListBox .userList tr td .error {
+  border-color: red;
+}
+
+.backUserListBox .userListBox .userList tr .OrPriceTotal {
+  font-weight: bold;
+}
+
+.backUserListBox .userListBox .userList .userInfo h3,
+.backUserListBox .userListBox .userList .userInfo header .blockLeft h2,
+header .blockLeft .backUserListBox .userListBox .userList .userInfo h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.backUserListBox .userListBox .userList .userInfo .tableInfo {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.backUserListBox .userListBox .userList .userInfo .tableInfo tr td:nth-child(1) {
+  vertical-align: top;
+  text-transform: capitalize;
+  text-align: right;
+  padding-right: 10px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.backUserListBox .userListBox .userList .userInfo .tableInfo tr td:nth-child(2) input,
+.backUserListBox .userListBox .userList .userInfo .tableInfo tr td:nth-child(2) textarea {
+  width: 200px;
+  resize: vertical;
+}
+
+.backUserListBox .userListBox .userList .Submit {
+  display: block;
+  background: none;
+  border: none;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: capitalize;
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+.backUserListBox .userListBox .userList .Submit:hover {
   color: #E7A331;
 }
