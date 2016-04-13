@@ -925,3 +925,206 @@ header .blockLeft .backUserListBox .userListBox .userList .userInfo h2 {
 .backUserListBox .userListBox .userList .Submit:hover {
   color: #E7A331;
 }
+
+/*### TABLE BOOKING ###*/
+
+.backTableBooking {
+  background: #fff;
+  height: auto;
+}
+
+.backTableBooking .tableBooking h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.backTableBooking .tableBooking .boxNav {
+  margin: 0px 0px 30px 0px;
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  height: 70px;
+  background: url("../img/app/decoration/back_menu.png");
+}
+
+.backTableBooking .tableBooking .boxNav .boxDate {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-top: 18px;
+  width: 270px;
+}
+
+.backTableBooking .tableBooking .boxNav .boxDate .container {
+  display: inline-block;
+  width: 200px;
+}
+
+.backTableBooking .tableBooking .boxNav .boxDate button {
+  vertical-align: top;
+  display: inline-block;
+  padding: 7px;
+  border-radius: 3px;
+  border: none;
+  background: #EEEEEE;
+}
+
+.backTableBooking .tableBooking .boxNav h4 {
+  padding-top: 16px;
+  margin-left: 180px;
+  color: #fff;
+  vertical-align: top;
+  font-style: italic;
+  display: inline-block;
+}
+
+.backTableBooking .tableBooking .boxNav h4 a {
+  color: orange;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo {
+  margin: 3px 20px 0px 0px;
+  float: right;
+  display: inline-block;
+  color: #fff;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo p {
+  margin: 0;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo p .colorFree,
+.backTableBooking .tableBooking .boxNav .colorInfo p .colorReserved,
+.backTableBooking .tableBooking .boxNav .colorInfo p .colorUndefine {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: green;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo p .colorReserved {
+  background: orange;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo p .colorUndefine {
+  background: gray;
+}
+
+.backTableBooking .tableBooking .boxNav .colorInfo p .item {
+  text-transform: capitalize;
+  vertical-align: top;
+}
+
+.backTableBooking .tableBooking .boxTableMap {
+  margin: 0 auto 20px auto;
+  width: 650px;
+  height: auto;
+  padding: 10px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .reserved {
+  background: orange;
+}
+
+.backTableBooking .tableBooking .boxTableMap .free {
+  background: green;
+}
+
+.backTableBooking .tableBooking .boxTableMap .undefine {
+  background: gray;
+}
+
+.backTableBooking .tableBooking .boxTableMap a {
+  text-decoration: none;
+  color: #000;
+}
+
+.backTableBooking .tableBooking .boxTableMap .smallT,
+.backTableBooking .tableBooking .boxTableMap .middleT,
+.backTableBooking .tableBooking .boxTableMap .bigT {
+  position: relative;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .smallT span,
+.backTableBooking .tableBooking .boxTableMap .middleT span,
+.backTableBooking .tableBooking .boxTableMap .bigT span {
+  line-height: 48px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .middleT {
+  width: 100px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .bigT {
+  width: 150px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair1,
+.backTableBooking .tableBooking .boxTableMap .Chair2,
+.backTableBooking .tableBooking .boxTableMap .Chair3,
+.backTableBooking .tableBooking .boxTableMap .Chair4 {
+  position: absolute;
+  border-radius: 0px 5px 5px 0px;
+  border-left: 5px solid green;
+  top: 10px;
+  left: -40px;
+  width: 30px;
+  height: 30px;
+  background: #D2E4C8;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair2,
+.backTableBooking .tableBooking .boxTableMap .Chair3,
+.backTableBooking .tableBooking .boxTableMap .Chair4 {
+  border-radius: 0px 0px 5px 5px;
+  border: none;
+  border-top: 5px solid green;
+  top: -40px;
+  left: 10px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair3 {
+  left: 60px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair4 {
+  left: 110px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair5,
+.backTableBooking .tableBooking .boxTableMap .Chair6,
+.backTableBooking .tableBooking .boxTableMap .Chair7,
+.backTableBooking .tableBooking .boxTableMap .Chair8 {
+  position: absolute;
+  border-radius: 5px 0px 0px 5px;
+  border-right: 5px solid green;
+  top: 10px;
+  right: -40px;
+  width: 30px;
+  height: 30px;
+  background: #D2E4C8;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair6,
+.backTableBooking .tableBooking .boxTableMap .Chair7,
+.backTableBooking .tableBooking .boxTableMap .Chair8 {
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  border-bottom: 5px solid green;
+  top: 60px;
+  right: 10px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair7 {
+  right: 60px;
+}
+
+.backTableBooking .tableBooking .boxTableMap .Chair8 {
+  right: 110px;
+}

@@ -687,3 +687,165 @@ footer{
         }
     }
 }
+
+/*### TABLE BOOKING ###*/
+.backTableBooking{
+    background: #fff;
+    height: auto;
+    .tableBooking{
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .boxNav{
+            margin: 0px 0px 30px 0px;
+            position: relative;
+            border-radius: 5px;
+            width: 100%;
+            height: 70px;
+            background: url("../img/app/decoration/back_menu.png");
+            .boxDate{
+                display: inline-block;
+                vertical-align:baseline;
+                padding-top: 18px;
+                width: 270px;
+                .container{
+                    display: inline-block;
+                    width: 200px;
+                }
+                button{
+                    vertical-align: top;
+                    display: inline-block;
+                    padding: 7px;
+                    border-radius: 3px;
+                    border:none;
+                    background: #EEEEEE;
+                }
+            }
+            h4{
+                padding-top: 16px;
+                margin-left: 180px;
+                color:#fff;
+                vertical-align:top;
+                font-style:italic;
+                display: inline-block;
+                a{
+                    color:orange;
+                }
+            }
+            .colorInfo{
+                margin:3px 20px 0px 0px;
+                float:right;
+                display: inline-block;
+                color:#fff;
+                p{
+                    margin: 0;
+                    .colorFree{
+                        display: inline-block;
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50%;
+                        background: green;
+                    }
+                    .colorReserved{
+                        @extend .colorFree;
+                        background: orange;
+                    }
+                    .colorUndefine{
+                        @extend .colorFree;
+                        background: gray;
+                    }
+                    .item{
+                        text-transform: capitalize;
+                        vertical-align:top;
+                    }
+                }
+            }
+        }
+        .boxTableMap{
+            margin: 0 auto 20px auto;
+            width: 650px;
+            height: auto;
+            padding: 10px;
+            .reserved{background: orange;}
+            .free{background: green;}
+            .undefine{background: gray;}
+            a{
+                text-decoration: none;
+                color:#000;
+            }
+            .smallT{
+                position: relative;
+                display: inline-block;
+                border-radius: 5px;
+                margin: 50px;
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                span{
+                    line-height: 48px;
+                }
+            }
+            .middleT{
+                @extend .smallT;
+                width: 100px;
+            }
+            .bigT{
+                @extend .smallT;
+                width: 150px;
+            }
+            .Chair1{
+                position: absolute;
+                border-radius: 0px 5px 5px 0px;
+                border-left: 5px solid green;
+                top:10px;
+                left:-40px;
+                width: 30px;
+                height: 30px;
+                background: #D2E4C8;
+            }
+            .Chair2{
+                @extend .Chair1;
+                border-radius: 0px 0px 5px 5px;
+                border:none;
+                border-top: 5px solid green;
+                top:-40px;
+                left:10px;
+            }
+            .Chair3{
+                @extend .Chair2;
+                left:60px;
+            }
+            .Chair4{
+                @extend .Chair2;
+                left:110px;
+            }
+            .Chair5{
+                position: absolute;
+                border-radius: 5px 0px 0px 5px;
+                border-right: 5px solid green;
+                top:10px;
+                right:-40px;
+                width: 30px;
+                height: 30px;
+                background: #D2E4C8;
+            }
+            .Chair6{
+                @extend .Chair5;
+                border-radius: 5px 5px 0px 0px;
+                border:none;
+                border-bottom: 5px solid green;
+                top:60px;
+                right:10px;
+            }
+            .Chair7{
+                @extend .Chair6;
+                right:60px;
+            }
+            .Chair8{
+                @extend .Chair6;
+                right:110px;
+            }
+        }
+    }
+}

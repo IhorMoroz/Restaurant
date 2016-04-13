@@ -5,8 +5,11 @@
         <title>Good Food</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
         <script src="js/jquery.min.js" charset="utf-8"></script>
         <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/moment-with-locales.min.js" charset="utf-8"></script>
+        <script src="js/bootstrap-datetimepicker.min.js" charset="utf-8"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRo7CUvaVaWx6U8cApoFs7htR7UruSWks&callback=initMap" async defer></script>
         <script src="js/main.js" charset="utf-8"></script>
     </head>
@@ -59,70 +62,135 @@
             </div>
         </header>
         <section>
-            <div class="backUserListBox absBlock">
-                <div class="userListBox siteBlock">
-            
-                    <div class="userList">
-                        <form action="" method="GET">
-                            <table class="table table-hover">
-                                <h2 class="blockTitle">order list</h2>
-                                <tr>
-                                    <th>№</th>
-                                    <th>name</th>
-                                    <th>gramme</th>
-                                    <th>serving</th>
-                                    <th>price</th>
-                                    <th>delete</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td><a href="#">dish1</a></td>
-                                    <td><span>200</span>g</td>
-                                    <td><input type="text" value="1" class="countDish" data-dish-id="" data-dish-price="12.35"></td>
-                                    <td>$<span class="OrPrice">12.35</span></td>
-                                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td><a href="#">dish1</a></td>
-                                    <td><span>200</span>g</td>
-                                    <td><input type="text" value="1" class="countDish" data-dish-id="" data-dish-price="15"></td>
-                                    <td>$<span class="OrPrice">15</span></td>
-                                    <td><a href="#"><span class="glyphicon glyphicon-trash"></span></a></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td class="OrPriceTotal">$<span title="Total sum">24</span></td>
-                                    <td></td>
-                                </tr>
-                            </table>
-                            <div class="userInfo">
-                                <h3>your contacts</h3>
-                                <table class="tableInfo">
-                                    <tr>
-                                        <td>*You name</td>
-                                        <td><input type="text" name="OrName"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>*Your contact phone</td>
-                                        <td><input type="text" name="OrPhone"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>*address delivery</td>
-                                        <td><textarea name="OrAddress"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td>details</td>
-                                        <td><textarea name="OrDetails"></textarea></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <button type="submit" class="Submit" name="OrderFood">order food</button>
-                            <button type="submit" class="Submit" name="OrderFood">add to table</button>
-                        </form>
+            <div class="backTableBooking absBlock">
+                <div class="tableBooking siteBlock">
+                    <h2>table booking</h2>
+                    <div class="boxNav">
+                        <div class="boxDate">
+                            <form action="" method="GET">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class='col-sm-12'>
+                                            <div class="form-group">
+                                                <div class='input-group date' id='datetimepicker5'>
+                                                    <input type='text' class="form-control" name="DateAndTimeTable" />
+                                                    <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $(function () {
+                                                $('#datetimepicker5').datetimepicker({
+                                                    defaultDate: new Date(),
+                                                    disabledDates: [
+                                                        // moment("12/25/2013"),
+                                                        // new Date(2013, 11 - 1, 21),
+                                                        // "04/16/2016"
+                                                    ]
+                                                }).data("DateTimePicker").minDate(new Date()).maxDate(new Date(2016,04,17));
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                                <button type="submit">Show</button>
+                            </form>
+                        </div>
+                        <h4>To reserve a table, call <a href="tel:8097876576">8097876576</a></h4>
+                        <div class="colorInfo">
+                            <p>
+                                <span class="colorFree"></span>
+                                <span class="item">free</span>
+                            </p>
+                            <p>
+                                <span class="colorReserved"></span>
+                                <span class="item">reserved</span>
+                            </p>
+                            <p>
+                                <span class="colorUndefine"></span>
+                                <span class="item">undefine</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="boxTableMap">
+                        <div class="smallT reserved" id="T1">
+                            <span>#1</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                        </div>
+                        <div class="smallT undefine" id="T2">
+                            <span>#2</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                        </div>
+                        <div class="smallT free" id="T3">
+                            <span>#3</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                        </div>
+                        <div class="smallT free" id="T4">
+                            <span>#4</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                        </div>
+                        <div class="middleT free" id="T5">
+                            <span>#5</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair3"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                            <div class="Chair7"></div>
+                        </div>
+                        <div class="middleT free" id="T6">
+                            <span>#6</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair3"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                            <div class="Chair7"></div>
+                        </div>
+                        <div class="middleT free" id="T7">
+                            <span>#7</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair3"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                            <div class="Chair7"></div>
+                        </div>
+                        <div class="bigT free" id="T8">
+                            <span>#8</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair3"></div>
+                            <div class="Chair4"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                            <div class="Chair7"></div>
+                            <div class="Chair8"></div>
+                        </div>
+                        <div class="bigT free" id="T9">
+                            <span>#9</span>
+                            <div class="Chair1"></div>
+                            <div class="Chair2"></div>
+                            <div class="Chair3"></div>
+                            <div class="Chair4"></div>
+                            <div class="Chair5"></div>
+                            <div class="Chair6"></div>
+                            <div class="Chair7"></div>
+                            <div class="Chair8"></div>
+                        </div>
                     </div>
                 </div>
             </div>

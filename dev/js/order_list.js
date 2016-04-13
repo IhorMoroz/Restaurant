@@ -15,13 +15,15 @@ $(document).ready(function(){
         for(var i = 0;i < dishPrices.length;i++){
             totalSum += Number($(dishPrices[i]).text());
         }
-        $(".OrPriceTotal").children("span").text(totalSum);
+        $(".OrPriceTotal").children("span").text(totalSum.toFixed(2));
     }
 
+    writeTotalPrice();
     $(".countDish").on('blur', function(){
         if(isNaN(this.value) || this.value < 1){
             $(this).addClass('error');
             message(NO_VALID_VALUE);
+            return false;
         }
         writeLocalPrice(this, this.value, $(this).attr("data-dish-price"));
         writeTotalPrice();
