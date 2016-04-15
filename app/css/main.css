@@ -1128,3 +1128,129 @@ header .blockLeft .backUserListBox .userListBox .userList .userInfo h2 {
 .backTableBooking .tableBooking .boxTableMap .Chair8 {
   right: 110px;
 }
+
+/*### INFORMATION PAGE ###*/
+
+.boxBackInformation {
+  background: url("../img/app/decoration/back_white.png");
+}
+
+.boxBackInformation .boxInformation {
+  padding: 20px 0px;
+}
+
+.boxBackInformation .boxInformation h2 {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*### USER_AREA PAGE ###*/
+
+.boxBackUserArea {
+  background: url("../img/app/decoration/back_white.png");
+}
+
+.boxBackUserArea .boxUserArea {
+  padding: 20px 0px;
+}
+
+.boxBackUserArea .boxUserArea .tableBox {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+.boxBackUserArea .boxUserArea .likeDishBox {
+  display: inline-block;
+  vertical-align: top;
+  width: 500px;
+  height: auto;
+  border: 1px solid red;
+}
+
+.boxBackUserArea .boxUserArea .profile {
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  height: auto;
+  border: 1px solid red;
+}
+
+/*### REGISTRATION AND LOGIN PAGE ###*/
+
+.backBoxRegistration {
+  background: url("../img/app/decoration/back_white.png");
+}
+
+.backBoxRegistration .boxRegistration {
+  padding: 20px 0px;
+}
+
+.backBoxRegistration .boxRegistration h2 {
+  text-align: center;
+}
+
+.backBoxRegistration .boxRegistration form {
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.backBoxRegistration .boxRegistration form label {
+  display: block;
+  text-align: center;
+  padding: 8px 0px;
+}
+
+.backBoxRegistration .boxRegistration form input {
+  display: block;
+  width: 100%;
+  padding: 6px 0px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.backBoxRegistration .boxRegistration form input[name="rememberMy"] {
+  display: inline-block;
+  width: auto;
+  padding: 0;
+  margin: 5px;
+}
+
+.backBoxRegistration .boxRegistration form button {
+  display: block;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 8px 10px;
+  text-transform: capitalize;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.backBoxRegistration .boxRegistration form a {
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.backBoxRegistration .boxRegistration form a:hover {
+  color: orange;
+}
+
+.backBoxRegistration .boxRegistration form p {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+/*### ADMIN PANEL ###*/
+
+.backAdminBox {
+  background: yellow;
+}
+
+.backAdminBox .adminBox {
+  height: 100px;
+}

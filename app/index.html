@@ -62,136 +62,18 @@
             </div>
         </header>
         <section>
-            <div class="backTableBooking absBlock">
-                <div class="tableBooking siteBlock">
-                    <h2>table booking</h2>
-                    <div class="boxNav">
-                        <div class="boxDate">
-                            <form action="" method="GET">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class='col-sm-12'>
-                                            <div class="form-group">
-                                                <div class='input-group date' id='datetimepicker5'>
-                                                    <input type='text' class="form-control" name="DateAndTimeTable" />
-                                                    <span class="input-group-addon">
-                                                        <span class="glyphicon glyphicon-calendar"></span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <script type="text/javascript">
-                                            $(function () {
-                                                $('#datetimepicker5').datetimepicker({
-                                                    defaultDate: new Date(),
-                                                    disabledDates: [
-                                                        // moment("12/25/2013"),
-                                                        // new Date(2013, 11 - 1, 21),
-                                                        // "04/16/2016"
-                                                    ]
-                                                }).data("DateTimePicker").minDate(new Date()).maxDate(new Date(2016,04,17));
-                                            });
-                                        </script>
-                                    </div>
-                                </div>
-                                <button type="submit">Show</button>
-                            </form>
-                        </div>
-                        <h4>To reserve a table, call <a href="tel:8097876576">8097876576</a></h4>
-                        <div class="colorInfo">
-                            <p>
-                                <span class="colorFree"></span>
-                                <span class="item">free</span>
-                            </p>
-                            <p>
-                                <span class="colorReserved"></span>
-                                <span class="item">reserved</span>
-                            </p>
-                            <p>
-                                <span class="colorUndefine"></span>
-                                <span class="item">undefine</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="boxTableMap">
-                        <div class="smallT reserved" id="T1">
-                            <span>#1</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                        </div>
-                        <div class="smallT undefine" id="T2">
-                            <span>#2</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                        </div>
-                        <div class="smallT free" id="T3">
-                            <span>#3</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                        </div>
-                        <div class="smallT free" id="T4">
-                            <span>#4</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                        </div>
-                        <div class="middleT free" id="T5">
-                            <span>#5</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair3"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                            <div class="Chair7"></div>
-                        </div>
-                        <div class="middleT free" id="T6">
-                            <span>#6</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair3"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                            <div class="Chair7"></div>
-                        </div>
-                        <div class="middleT free" id="T7">
-                            <span>#7</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair3"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                            <div class="Chair7"></div>
-                        </div>
-                        <div class="bigT free" id="T8">
-                            <span>#8</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair3"></div>
-                            <div class="Chair4"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                            <div class="Chair7"></div>
-                            <div class="Chair8"></div>
-                        </div>
-                        <div class="bigT free" id="T9">
-                            <span>#9</span>
-                            <div class="Chair1"></div>
-                            <div class="Chair2"></div>
-                            <div class="Chair3"></div>
-                            <div class="Chair4"></div>
-                            <div class="Chair5"></div>
-                            <div class="Chair6"></div>
-                            <div class="Chair7"></div>
-                            <div class="Chair8"></div>
-                        </div>
-                    </div>
+            <div class="backBoxRegistration absBlock">
+                <div class="boxRegistration siteBlock">
+                    <h2>Login</h2>
+                    <form method="POST">
+                        <label for="Name" name="Name">Login</label>
+                        <input type="text" id="Name">
+                        <label for="Password">Password</label>
+                        <input type="password" id="Password" name="Password">
+                        <p>remember my</p><input type="checkbox" name="rememberMy" value="1">
+                        <button type="subit" name="button">login</button>
+                        <a href="#">registration</a>
+                    </form>
                 </div>
             </div>
         </section>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <style media="screen">
+            body{
+                background: url("../img/app/decoration/back_white.png");
+            }
+            form{
+                width: 500px;
+                height: auto;
+                margin: 20% auto;
+            }
+            input{
+                display: block;
+                width: 100%;
+                padding: 10px 0px;
+                border-radius: 5px;
+                outline: none;
+            }
+            label{
+                display: block;
+                text-align: center;
+                padding: 10px 0px;
+            }
+            button{
+                display: block;
+                margin: 10px auto;
+                padding: 5px 10px;
+                background: none;
+                border:1px solid #000;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST">
+            <label for="Name" name="Name">Login</label>
+            <input type="text" id="Name">
+            <label for="Password">Password</label>
+            <input type="password" id="Password" name="Password">
+            <button type="subit" name="button">login</button>
+        </form>
+    </body>
+</html>

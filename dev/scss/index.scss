@@ -849,3 +849,111 @@ footer{
         }
     }
 }
+
+/*### INFORMATION PAGE ###*/
+.boxBackInformation{
+    background: url("../img/app/decoration/back_white.png");
+    .boxInformation{
+        padding: 20px 0px;
+        h2{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        p{
+
+        }
+    }
+}
+
+/*### USER_AREA PAGE ###*/
+.boxBackUserArea{
+    background: url("../img/app/decoration/back_white.png");
+    .boxUserArea{
+        padding: 20px 0px;
+        .tableBox{
+            display: inline-block;
+            width: 300px;
+            height: 200px;
+            border:1px solid red;
+        }
+        .likeDishBox{
+            display: inline-block;
+            vertical-align: top;
+            width: 500px;
+            height: auto;
+            border:1px solid red;
+        }
+        .profile{
+            display: inline-block;
+            vertical-align: top;
+            width: 300px;
+            height: auto;
+            border:1px solid red;
+        }
+    }
+}
+
+/*### REGISTRATION AND LOGIN PAGE ###*/
+.backBoxRegistration{
+    background: url("../img/app/decoration/back_white.png");
+    .boxRegistration{
+        padding: 20px 0px;
+        h2{
+            text-align: center;
+        }
+        form{
+            width: 500px;
+            height: auto;
+            margin:0 auto;
+            label{
+                display: block;
+                text-align: center;
+                padding: 8px 0px;
+            }
+            input{
+                display: block;
+                width: 100%;
+                padding: 6px 0px;
+                border-radius: 5px;
+                outline: none;
+                &[name="rememberMy"]{
+                    display: inline-block;
+                    width: auto;
+                    padding: 0;
+                    margin: 5px;
+                }
+            }
+            button{
+                display: block;
+                background: #fff;
+                border:1px solid #000;
+                border-radius:5px;
+                padding: 8px 10px;
+                text-transform: capitalize;
+                margin:20px auto;
+                font-size: 18px;
+            }
+            a{
+                display: block;
+                text-align: center;
+                text-transform: capitalize;
+                text-decoration: none;
+                &:hover{
+                    color:orange;
+                }
+            }
+            p{
+                display: inline-block;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+/*### ADMIN PANEL ###*/
+.backAdminBox{
+    background: yellow;
+    .adminBox{
+        height: 100px;
+    }
+}
